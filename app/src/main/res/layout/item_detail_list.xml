@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layout_distance">
+
+        <TextView
+            android:id="@+id/tvRefund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="退款"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/text_size_et" />
+
+        <TextView
+            android:id="@+id/tvComTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRefund"
+            android:layout_marginTop="7dp"
+            android:text="2017-8-28"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/text_size_tv" />
+
+        <TextView
+            android:id="@+id/tvGiveMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:gravity="center"
+            android:text="33"
+            android:textColor="@color/check_font_color" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+</LinearLayout>

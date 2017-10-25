@@ -1,0 +1,112 @@
+<resources>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!-- 分享dialog -->
+    <style name="ShareStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/bg_share_dia</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!-- 苹果风格dialog -->
+    <style name="MyDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/base_dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/MyDialogStyle</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+
+    </style>
+    <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+    <!-- base load_dialog -->
+    <style name="base_load_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+    </style>
+    <!-- 上下两个是下面弹出dialog的style -->
+    <style name="Theme_Dialog_From_Bottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in1</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out1</item>
+    </style>
+    <!-- "支付密码" -->
+    <style name="dialog_anim">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowEnterAnimation">@anim/in_bottomtop</item>
+        <item name="android:windowExitAnimation">@anim/out_bottomtop</item>
+
+
+        <!-- <item name="android:windowExitAnimation">@anim/pophiden_anim</item> -->
+    </style>
+
+    <style name="OneClickBuyDeleteDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterAnimation">@anim/in_bottomtop</item>
+        <item name="android:windowExitAnimation">@anim/out_bottomtop</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--/activity Login启动关闭动画-->
+    <style name="ThemeLoginActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/AnimationLoginActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationLoginActivity" parent="@android:style/Animation.Activity">
+        <!--如何进入屏幕-->
+        <item name="android:activityOpenEnterAnimation">@anim/in_bottomtop</item>
+        <!--上一个acitvity如何删除屏幕-->
+        <item name="android:activityOpenExitAnimation">@anim/out_topbottom</item>
+        <!--下次 onresum activity如何进入屏幕-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/out_topbottom</item>-->
+        <!--如何闪出屏幕-->
+        <item name="android:activityCloseExitAnimation">@anim/out_topbottom</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--底部导航栏样式-->
+
+
+    <style name="MyToggleButton" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/activity_toggle_btn</item>
+    </style>
+
+</resources>

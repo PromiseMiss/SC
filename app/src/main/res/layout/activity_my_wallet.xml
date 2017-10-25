@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/icon_navigation_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="31dp"
+            android:text="账户余额(元)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvAllMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_distance_fifer"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_all_height"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTopUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:drawableLeft="@drawable/icon_top_up"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableRight="@drawable/my_icon_back"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="@string/top_up"
+            android:textColor="@color/activity_font_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/tvMoneyQuery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:drawableLeft="@drawable/icon_money_query"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableRight="@drawable/my_icon_back"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="@string/money_query"
+            android:textColor="@color/activity_font_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+</LinearLayout>

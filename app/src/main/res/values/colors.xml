@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--base-->
+    <color name="white">#ffffffff</color>
+    <color name="main_bottom_text">#61646b</color>
+    <color name="head_title_bg">#fafdfd</color>
+    <color name="head_title_gray">#424242</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="title_font">#281315</color>
+    <color name="main_theme">#73ac2d</color>
+    <color name="main_theme_press">#00ff00</color>
+    <color name="button_no_foc">#666666</color>
+    <color name="orange">#f9ba54</color>
+    <color name="trans">#00000000</color>
+    <color name="gray_s">#9b9b9b</color>
+    <color name="gray_line">#fafbfb</color>
+    <color name="line_color">#eeeeee</color>
+    <color name="line_color_">#cccccc</color>
+    <color name="line_bg">#fafbfd</color>
+    <color name="font_black">#000000</color>
+    <color name="bottom_bg_color">#fcfdfc</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="activity_font_color">#323232</color>
+    <color name="font_base_color">#666666</color>
+    <color name="font_base_color_">#999999</color>
+
+    <color name="gray_font">#333333</color>
+    <color name="bg_activity">#fafbfd</color>
+    <color name="bg_share_dia">#00000000</color>
+
+    <!--短信验证码倒计时按钮-->
+    <!--可点-->
+    <color name="sms_text_color_">#ffffff</color>
+    <color name="sms_bg_color_">#79b038</color>
+    <color name="sms_text_code">#cccccc</color>
+    <!--不可点-->
+    <color name="sms_text_color">#999999</color>
+    <color name="sms_bg_color">#eeeeee</color>
+
+    <!-- 底部导航栏.首页-->
+    <color name="main_theme_color">#79b038</color>
+    <color name="check_font_color">#79b038</color>
+
+    <color name="no_check_font_color">#606060</color>
+    <color name="main_activity_bottom_bar_bg">#fcfdfc</color>
+    <color name="main_activity_exit_font_color">#999999</color>
+    <color name="home_index_top_search">#fafafa</color>
+
+
+    <!--分类-->
+    <color name="classify_title_font_color">#323232</color>
+    <!--登录-->
+    <color name="login_bg_color">#fcfdfc</color>
+    <color name="login_btn_bg_">#cccccc</color>
+
+    <color name="forget_pw">#79b038</color>
+    <color name="activity_title_bg">#fcfdfc</color>
+    <color name="setting_font_color">#000000</color>
+    <color name="bg_color">#fcfdfc</color>
+
+    <!--购物车-->
+    <color name="money_font">#ff4e00</color>
+
+    <color name="top_bg">#f3f5f9</color>
+    <color name="shop_order_font">#73ac2b</color>
+</resources>

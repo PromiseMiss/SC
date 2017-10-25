@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:text="@string/balance"
+            android:textColor="@color/activity_font_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:text="@string/wei_xin"
+            android:textColor="@color/activity_font_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:paddingLeft="@dimen/layout_distance" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:text="@string/alipay"
+            android:textColor="@color/activity_font_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+</LinearLayout>

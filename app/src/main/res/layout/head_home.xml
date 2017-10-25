@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="147.33dp"
+        app:canLoop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableTop="@drawable/home_index_icon_new_product_launch"
+            android:gravity="center"
+            android:paddingTop="9.67dp"
+            android:text="@string/home_index_new_product_launch"
+            android:textColor="@color/activity_font_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCrazyCity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableTop="@drawable/home_index_icon_carnival_city"
+            android:gravity="center"
+            android:paddingTop="9.67dp"
+            android:text="@string/home_index_carnival_city"
+            android:textColor="@color/activity_font_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvArrange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableTop="@drawable/home_index_icon_ranking_list"
+            android:gravity="center"
+            android:paddingTop="9.67dp"
+            android:text="@string/home_index_ranking_list"
+            android:textColor="@color/activity_font_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvShanCaiInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableTop="@drawable/home_index_icon_cai_information"
+            android:gravity="center"
+            android:paddingTop="9.67dp"
+            android:text="@string/home_index_cai_information"
+            android:textColor="@color/activity_font_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/layout_distance" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/main_activity_bottom_bar_bg"
+        android:gravity="center"
+        android:text="@string/home_index_daily_recommend"
+        android:textColor="@color/check_font_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/home_index_icon_extra_cai"
+                tools:ignore="ContentDescription" />
+
+            <ViewFlipper
+                android:layout_marginLeft="13dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/homepage_notice_vf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head_title"/>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/login_title_height"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@color/activity_title_bg"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivServiceBack"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/back_icon" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:text="@string/service_center"-->
+            <!--android:textColor="@color/activity_font_color"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/line_color" />-->
+    <!--</RelativeLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7px"
+        android:background="@color/line_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/service_height_ll"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOnlineService"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_online_service"
+            android:gravity="center"
+            android:paddingTop="19dp"
+            android:text="@string/online_service_"
+            android:textColor="@color/setting_font_color" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/tvPhoneService"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_phone_service"
+            android:gravity="center"
+            android:paddingTop="19dp"
+            android:text="@string/phone_service"
+            android:textColor="@color/setting_font_color" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7px"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/my_icon_back"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="@string/common_questions"
+            android:textColor="@color/font_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

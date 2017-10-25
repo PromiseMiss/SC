@@ -1,0 +1,32 @@
+package com.gym.shancai.customview;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ListView;
+
+/**
+ * 创建:gym
+ * 日期:2016-11-21.
+ * 说明:
+ * 备注:
+ */
+
+public class NoScrollListView extends ListView {
+    public NoScrollListView(Context context) {
+        super(context);
+    }
+
+    public NoScrollListView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public NoScrollListView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int mExpandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
+        super.onMeasure(widthMeasureSpec, mExpandSpec);
+    }
+}

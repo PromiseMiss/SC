@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="round_du">5dp</dimen>
+    <dimen name="round_du_big">4dp</dimen>
+    <dimen name="title_textSize">16sp</dimen>
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="textSize">13sp</dimen>
+    <dimen name="delete_action_len">90dip</dimen>
+    <dimen name="all_order_bottom_button_height">26dip</dimen>
+
+    <!--底部导航栏-->
+    <dimen name="main_activity_fl_layout_height">0dp</dimen>
+    <dimen name="main_activity_height">50dp</dimen>
+    <dimen name="main_activity_bar_iv_width">23dp</dimen>
+    <dimen name="main_activity_bar_iv_height">20dp</dimen>
+    <dimen name="main_activity_bar_iv_margin_top">6dp</dimen>
+    <dimen name="main_activity_bar_tv_margin_top">5dp</dimen>
+    <!--首页。搜索-->
+    <dimen name="home_index_top_search_rounded">5dp</dimen>
+    <dimen name="home_index_title_lw">65dp</dimen>
+    <dimen name="home_index_title_iv_lw">15dp</dimen>
+    <dimen name="home_index_title_iv_lh">20dp</dimen>
+    <dimen name="home_index_title_edit_lw">254dp</dimen>
+    <!--登录-->
+    <dimen name="login_title_height">45dp</dimen>
+    <dimen name="layout_all_height">80dp</dimen>
+    <dimen name="layout_only_height">40dp</dimen>
+    <dimen name="service_height_ll">84dp</dimen>
+
+    <!--textSize-->
+    <dimen name="text_size_et">13sp</dimen>
+    <dimen name="text_size_tv">10sp</dimen>
+    <dimen name="ordinary_size">14sp</dimen>
+
+
+    <!--布局距离-->
+    <dimen name="layout_distance">10dp</dimen>
+    <dimen name="layout_distance_one">11dp</dimen>
+    <dimen name="layout_distance_two">12dp</dimen>
+    <dimen name="layout_distance_three">13dp</dimen>
+    <dimen name="layout_distance_four">14dp</dimen>
+    <dimen name="layout_distance_fifer">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

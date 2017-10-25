@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_root"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/main_theme">
+
+        <ImageView
+            android:onClick="back"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:gravity="center"
+            android:background="@drawable/background_button_nocolor_rt"
+            android:padding="10dp"
+            android:src="@drawable/base_back_white"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:onClick="close"
+            android:id="@+id/close"
+            android:layout_toRightOf="@id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:gravity="center"
+            android:background="@drawable/background_button_nocolor_rt"
+            android:padding="10dp"
+            android:src="@drawable/base_close_white"
+            tools:ignore="ContentDescription" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_toRightOf="@id/back"-->
+        <!--android:background="@color/gray"-->
+        <!--tools:ignore="ContentDescription" />-->
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="75.0dip"
+            android:paddingRight="75.0dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/head_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:background="@drawable/background_button_nocolor_rt"
+            android:onClick="reload"
+            android:padding="10dp"
+            android:src="@drawable/base_web_reload"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/head_right_button"
+            android:background="@color/gray"
+            tools:ignore="ContentDescription" />
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:max="100"
+            android:progress="0"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+
+            />
+        <!--<View-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="@color/main_theme"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true" />-->
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_distance_one"
+            android:background="@color/bg_activity"
+            android:gravity="center_vertical"
+            android:text="@string/base_information"
+            android:textColor="@color/setting_font_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/layout_distance"
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_button_white_rt"
+            android:layout_height="@dimen/layout_only_height">
+
+            <TextView
+                android:id="@+id/tvChangeHand"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_only_height"
+                android:drawableRight="@drawable/my_icon_back"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/layout_distance"
+                android:text="@string/change_head_portrait"
+                android:textColor="@color/setting_font_color"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/ivHead"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="@dimen/layout_distance_four"
+                android:src="@drawable/demo_little_icon" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:paddingLeft="@dimen/layout_distance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:drawableRight="@drawable/my_icon_back"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_button_white_rt"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="@string/user_name"
+            android:textColor="@color/setting_font_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:paddingLeft="@dimen/layout_distance"
+            android:id="@+id/llYouTel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_only_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_only_height"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/phone_number"
+                android:textColor="@color/setting_font_color" />
+
+            <TextView
+                android:id="@+id/tvPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/layout_distance"
+                android:text=""
+                android:textColor="@color/font_base_color_" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/layout_distance_one"
+            android:background="@color/bg_activity"
+            android:gravity="center_vertical"
+            android:text="@string/real_name_information"
+            android:textColor="@color/setting_font_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/layout_distance"
+            android:id="@+id/llYouName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_only_height"
+                android:gravity="center_vertical"
+                android:text="@string/real_name"
+                android:textColor="@color/setting_font_color" />
+
+            <TextView
+                android:id="@+id/tvRealName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/layout_distance"
+                android:text=""
+                android:textColor="@color/font_base_color_" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:id="@+id/llYouID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="@dimen/layout_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_only_height"
+                android:gravity="center_vertical"
+                android:text="@string/id_code"
+                android:textColor="@color/setting_font_color" />
+
+            <TextView
+                android:id="@+id/tvIdCardNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:paddingRight="@dimen/layout_distance"
+                android:text=""
+                android:textColor="@color/font_base_color_" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/layout_distance_one"
+            android:background="@color/bg_activity"
+            android:gravity="center_vertical"
+            android:text="@string/else_information"
+            android:textColor="@color/setting_font_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/llRegisterTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_only_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/layout_distance"
+                android:text="@string/register_time"
+                android:textColor="@color/setting_font_color" />
+
+            <TextView
+                android:id="@+id/tvRegisterTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:padding="@dimen/layout_distance"
+                android:text=""
+                android:textColor="@color/font_base_color_" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/head_title_gray">
+
+    <TextView
+        android:background="@drawable/background_button_nocolor_rt"
+        android:stateListAnimator="@animator/button_press"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="back"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:drawablePadding="4dp"
+        android:textSize="13sp"
+        android:drawableLeft="@drawable/base_back_white"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="0dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_textSize" />
+
+    <ImageView
+        android:id="@+id/head_right_button"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginRight="10dp"
+        android:onClick="rightClick"
+        android:text=""
+        android:background="@color/trans"
+        android:layout_margin="4dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/title_textSize"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/head_right_text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:onClick="rightClick"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="完成"
+        android:background="@drawable/background_button_nocolor_rt"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_title_line"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

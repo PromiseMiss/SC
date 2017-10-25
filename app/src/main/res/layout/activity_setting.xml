@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head_title" />
+
+
+    <TextView
+        android:id="@+id/tvLoginPW"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/my_icon_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_distance"
+        android:paddingRight="@dimen/layout_distance"
+        android:text="@string/login_password"
+        android:textColor="@color/setting_font_color" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/layout_distance"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tvPayPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/my_icon_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_distance"
+        android:paddingRight="@dimen/layout_distance"
+        android:text="@string/pay_password"
+        android:textColor="@color/setting_font_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/bg_activity" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tvPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/my_icon_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_distance"
+        android:paddingRight="@dimen/layout_distance"
+        android:text="@string/phone_number"
+        android:textColor="@color/setting_font_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tvManage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/my_icon_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_distance"
+        android:paddingRight="@dimen/layout_distance"
+        android:text="@string/manage_site"
+        android:textColor="@color/setting_font_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/bg_activity" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/tvClearCache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:drawableRight="@drawable/my_icon_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_distance"
+        android:paddingRight="@dimen/layout_distance"
+        android:text="@string/clear_cache"
+        android:textColor="@color/setting_font_color" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+    <Button
+        android:id="@+id/btExitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="退出登录"
+        android:textSize="15sp"
+        android:background="@drawable/base_bg_button_theme"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_activity" />
+
+
+</LinearLayout>

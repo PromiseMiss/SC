@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/bottom_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:focusableInTouchMode="true"
+            android:id="@+id/etSearchSon"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/home_index_rounded_edit_text"
+            android:drawableLeft="@drawable/home_index_icon_search"
+            android:drawablePadding="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/main_activity_exit_font_color"
+            android:textColorHint="@color/main_activity_exit_font_color" />
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="@dimen/layout_distance_one"
+            android:paddingRight="@dimen/layout_distance_fifer"
+            android:text="@string/cancel"
+            android:textColor="@color/font_base_color" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+
+    <GridView
+        android:id="@+id/gvNewMarket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:numColumns="2"
+        android:scrollbars="none" />
+</LinearLayout>

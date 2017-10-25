@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--订单确认——脚布局-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_only_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:text="直邮运费"
+            android:textColor="@color/activity_font_color" />
+
+        <TextView
+            android:id="@+id/tvPostPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="￥77"
+            android:textColor="@color/font_base_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/llPayWay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_only_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_distance"
+            android:text="支付方式"
+            android:textColor="@color/activity_font_color" />
+
+        <TextView
+            android:id="@+id/tvPayWay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_distance"
+            android:drawableRight="@drawable/my_icon_back"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/layout_distance"
+            android:text="余额"
+            android:textColor="@color/font_base_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+</LinearLayout>
